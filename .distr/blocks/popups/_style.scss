@@ -1,0 +1,83 @@
+.popup{
+	position: relative;
+	max-width: 370px;
+	overflow: hidden;
+	background: #00142A;
+	box-sizing: border-box;
+	padding: 35px 20px;
+	&__close {
+		position: absolute;
+		content: "";
+		top: 10px;
+		right: 10px;
+		width: 45px;
+		height: 45px;
+		background-repeat: no-repeat;
+		-webkit-background-size: 25px auto;
+		background-size: 25px auto;
+		background-position: 50% 50%;
+		z-index: 2;
+		background-image: url("../img/popups/close.svg");
+	}
+	&-registration{
+		padding: 60px 45px;
+		box-shadow: 0 0 30px -13px rgba(217, 26, 130, 0.5);
+	}
+	&-program{
+		width: 100%;
+		max-width: 1300px;
+		padding: 80px;
+		&-top{
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			border-bottom: 1px solid #ffffff;
+			padding-bottom: 15px;
+		}
+		&-title{
+			font-size: 36px;
+			line-height: 36px;
+			letter-spacing: -0.04em;
+			color: #FFFFFF;
+		}
+		&-pic{
+			width: 45px;
+			height: 45px;
+			flex-shrink: 0;
+		}
+		&-description{
+			padding: 30px 0 0;
+			p{
+				font-size: 22px;
+				line-height: 25px;
+				color: #FFFFFF;
+				margin-bottom: 20px;
+			}
+		}
+		.form{
+			border-top: 1px solid #fff;
+			padding-top: 35px!important;
+			&__items{
+				flex-direction: row!important;
+			}
+			&__item{
+				width: 24%!important;
+			}
+		}
+	}
+	.form {
+		padding: 0;
+		min-width: inherit;
+		&__title {
+		font-size: 34px;
+		line-height: 36px;
+		}
+		&__items{
+		flex-direction: column;
+		}
+		&__item {
+		width: 100%;
+		margin-bottom: 20px;
+		}
+	}
+}

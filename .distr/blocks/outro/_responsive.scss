@@ -1,0 +1,131 @@
+.outro{
+	@media (max-width: 1200px) {
+		padding: 100px 0 60px;
+		&__form{
+			max-width: 400px;
+			margin: 0 auto;
+		}
+		&__title{
+			font-size: 76px;
+			line-height: 78px;
+			max-width: 500px;
+		}
+		&__footer-info{
+			font-size: 8px;
+			line-height: 10px;
+			a, p{
+				font-size: 8px;
+				line-height: 10px;
+			}
+		}
+	}
+	@media(max-width:992px){
+
+		&__form {
+			max-width: 300px;
+			.form{
+				padding: 20px 0;
+				&__title{
+					margin: 30px 0 15px;
+					font-size: 26px;
+					line-height: 28px;
+				}
+			}
+		}
+		&__footer{
+			margin-top: 20px;
+		}
+		&__phone{
+			width: 105px;
+			img{
+				width: 20px;
+				height: 20px;
+			}
+			span{
+				font-size: 10px;
+				line-height: 14px;
+				margin-left: 5px;
+			}
+		}
+
+		&__footer-info{
+			max-width: 170px;
+			font-size: 7px;
+			line-height: 8px;
+			a, p{
+				font-size: 7px;
+				line-height: 8px;
+			}
+		}
+	}
+
+	@media(max-width:767px){
+		padding: 80px 0 60px;
+		background: url("../img/outro/bg-mobile.jpg") top center no-repeat;
+		background-size: cover;
+		&__block{
+			flex-direction: column;
+		}
+		&__content,
+		&__form{
+			width: 100%;
+		}
+		&__pic{
+			display: none;
+		}
+		&__form{
+			position: relative;
+			max-width: inherit;
+			margin-top: 45px;
+			&:before{
+				content:'';
+				background: rgba(0, 0, 0, 0.6);
+				width: 100%;
+				height: 100%;
+				position: absolute;
+				filter: blur(75px);
+			}
+		}
+	}
+
+
+	@media(max-width:576px){
+		padding: 60px 0 90px;
+		&__title{
+			font-size: 52px;
+			line-height: 52px;
+			max-width: 320px;
+		}
+		&__subtitle {
+			font-size: 22px;
+			line-height: 24px;
+		}
+		&__block {
+			margin-top: 45px;
+			flex-direction: column;
+		}
+		&__item{
+			margin: 0 0 15px;
+			border: none;
+			br{
+				display: none;
+			}
+			p{
+				font-size: 18px;
+				line-height: 20px;
+				padding-left: 0;
+				position: relative;
+				&:before{
+					content: '';
+					height: 1px;
+					width: 45px;
+					background-color: #fff;
+					position: absolute;
+					bottom: -7px;
+					left: 0;
+					opacity: 0.3;
+				}
+			}
+		}
+	}
+}

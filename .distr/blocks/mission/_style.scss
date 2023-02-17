@@ -1,0 +1,65 @@
+.mission{
+    background-color: #ffffff;
+    color: #202020;
+    padding: 0 0 100px;
+    &__title{
+        font-size: 62px;
+        line-height: 94%;
+        margin-bottom: 15px;
+    }
+    &__block{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__item{
+        border-top: 1px solid #000000;
+        border-bottom: 1px solid #000000;
+        padding: 35px 0;
+        &-1{
+            width: 63%;
+        }
+        &-2{
+            width: 35%;
+            position: relative;
+            &:after{
+                content: '';
+                width: 560px;
+                height: 627px;
+                background: url("../img/mission/decoration.png")center center no-repeat;
+                background-size: contain;
+                position: absolute;
+                top: -45px;
+                left: -60px;
+            }
+        }
+    }
+    &__pic{
+        position: relative;
+        z-index: 1;
+    }
+    &__text{
+        max-width: 550px;
+        font-size: 22px;
+        line-height: 25px;
+        margin-top: 25px;
+        &-big{
+            max-width: 550px;
+            font-size: 36px;
+            line-height: 36px;
+            letter-spacing: -0.04em;
+        }
+    }
+
+    @keyframes smallScale {
+        0% {
+            transform: scale(1) rotate(0) translateY(0);
+        }
+        50% {
+            transform: scale(1.15) rotate(-15deg) translateY(10%);
+        }
+        100% {
+            transform: scale(1) rotate(0) translateY(0);
+        }
+    }
+}
+

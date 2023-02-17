@@ -1,0 +1,95 @@
+.mission{
+	@media (max-width: 1200px) {
+
+	}
+	@media(max-width:992px){
+		padding: 90px 0;
+		&__title{
+			font-size: 48px;
+			margin-bottom: 45px;
+		}
+		&__text{
+			font-size: 18px;
+			line-height: 20px;
+			&-big{
+				font-size: 26px;
+				line-height: 28px;
+			}
+		}
+		&__item-2{
+			.mission__text-big{
+				font-size: 24px;
+				line-height: 24px;
+			}
+			&:after{
+				width: 400px;
+				height: 500px;
+				top: -50px;
+				left: 30px;
+			}
+		}
+	}
+	@media(max-width:768px){
+		padding: 70px 0;
+		&__block{
+			flex-direction: column-reverse;
+		}
+		&__item{
+			width: 100%;
+
+			&-2{
+				display: flex;
+				align-items: center;
+				padding: 0;
+				border: inherit;
+				
+				&:after{
+					background: url("../img/about/circle.svg")center center no-repeat;
+					background-size: contain;
+					width: 500px;
+					height: 500px;
+					top: -245px;
+					left: auto;
+					right: -150px;
+					opacity: 0.1;
+					animation: smallScale infinite 25s ease;
+				}
+			}
+		}
+		&__text{
+			max-width: inherit;
+			&-big{
+				max-width: inherit;
+			}
+		}
+	}
+	@media(max-width:576px){
+		padding: 35px 0;
+		&__title {
+			font-size: 36px;
+			margin-bottom: 30px;
+		}
+		&__text{
+			&-big{
+				font-size: 24px;
+				line-height: 26px;
+			}
+		}
+		&__item-2{
+			&:after{
+				background: url("../img/about/circle.svg")center center no-repeat;
+				background-size: contain;
+				width: 400px;
+				height: 400px;
+				top: -245px;
+				left: auto;
+				right: -150px;
+				opacity: 0.2;
+				animation: none;
+			}
+		}
+		&__pic{
+			max-width: 130px;
+		}
+	}
+}

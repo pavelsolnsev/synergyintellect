@@ -1,0 +1,77 @@
+.program {
+    padding: 175px 0 190px;
+    background: url("../img/program/bg.jpg") center center no-repeat;
+    background-size: cover;
+    &__title {
+        font-size: 80px;
+        line-height: 76px;
+        letter-spacing: -0.04em;
+        color: #ffffff;
+    }
+    &__block {
+        margin-top: 15px;
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: 1fr 1fr 1fr;
+        // grid-template-columns: minmax(auto, 240px) minmax(auto, 240px) auto minmax(auto, 190px) minmax(auto, 190px);
+        // grid-template-areas:
+        //     "item-01 item-02 item-03"
+        //     "item-04 item-05 item-03"
+        //     "item-06 item-07 item-08"
+        //     "item-06 item-09 item-10"
+        //     ;
+    }
+    &__item {
+        z-index: 0;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+        background: rgba(15, 15, 56, 0.65);
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 15px;
+        min-height: 260px;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(31, 31, 74, 0.4);
+            z-index: -1;
+        }
+        &:hover {
+            color: #ffffff;
+            background: rgba(49, 55, 123, 0.6);
+            box-shadow: 0 5px 15px #0a135b;
+            transform: scale(1.02);
+        }
+        &-pic {
+            width: 55px;
+            flex-shrink: 0;
+        }
+        &-info {
+            max-width: 250px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &-title {
+            font-size: 36px;
+            line-height: 36px;
+            letter-spacing: -0.04em;
+        }
+        &-show {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            font-size: 22px;
+            line-height: 25px;
+            img {
+                margin-left: 15px;
+            }
+        }
+    }
+}

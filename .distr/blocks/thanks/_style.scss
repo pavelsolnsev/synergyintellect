@@ -1,0 +1,26 @@
+.thanks {
+    background: url("../img/main/bg.jpg") center center no-repeat, #061735;
+    background-size: cover;
+    padding: 100px 0 50px;
+    position: relative;
+    font-weight: 400;
+    color: #ffffff;
+    min-height: 100vh;
+    &__gift {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 37px;
+    }
+    &__title {
+        font-size: 62px;
+        line-height: 94%;
+        margin-bottom: 50px;
+        max-width: 50%;
+    }
+    &__description {
+        font-size: 42px;
+        line-height: 94%;
+        margin-bottom: 45px;
+        max-width: 50%;
+    }
+}

@@ -1,0 +1,52 @@
+.who{
+    background-color: #ffffff;
+    color: #202020;
+    padding: 190px 0;
+    &__title{
+        font-size: 80px;
+        line-height: 76px;
+        text-align: center;
+        letter-spacing: -0.04em;
+        color: #202020;
+        border-bottom: 1px solid #202020;
+    }
+    &__block{
+        display: flex;
+        justify-content: space-between;
+        margin-top: 40px;
+    }
+    &__item{
+        width: 45%;
+        &-pic{
+            max-height: 410px;
+            display: flex;
+        }
+        &-title{
+            font-size: 60px;
+            line-height: 69px;
+            letter-spacing: -0.04em;
+            margin-top: 25px;
+        }
+        &-list{
+            margin-top: 10px;
+            li{
+                position: relative;
+                font-size: 36px;
+                line-height: 36px;
+                letter-spacing: -0.04em;
+                margin-left: 35px;
+                margin-bottom: 10px;
+                &:before{
+                    content: '';
+                    width: 15px;
+                    height: 2px;
+                    background: #202020;
+                    position: absolute;
+                    top: 16px;
+                    left: -33px;
+                }
+            }
+        }
+    }
+}
+

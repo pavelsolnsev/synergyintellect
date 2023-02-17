@@ -1,0 +1,48 @@
+.popup{
+    @media(max-width:768px){
+        padding: 55px 20px 45px;
+
+        &-program{
+            padding: 60px 30px 40px;
+            &-title {
+                font-size: 28px;
+                line-height: 28px;
+            }
+            &-pic {
+                width: 40px;
+                height: 40px;
+                flex-shrink: 0;
+            }
+            &-description{
+                p{
+                    font-size: 18px;
+                    line-height: 20px;
+                }
+            }
+            .form{
+                &__items{
+                    flex-direction: column!important;
+                }
+                &__item{
+                    width: 100%!important;
+                }
+            }
+        }
+    }
+    @media(max-width:576px){
+        &-program{
+            &-description{
+                p{
+                    font-size: 16px;
+                    line-height: 20px;
+                }
+            }
+            .form{
+                &__title{
+                    font-size: 24px;
+                    line-height: 32px;
+                }
+            }
+        }
+    }
+}
